@@ -4,7 +4,7 @@
       <template #avatar>
         <NAvatar>
           <NIcon>
-            <CashIcon />
+            <component :is="icon" />
           </NIcon>
         </NAvatar>
       </template>
@@ -40,5 +40,6 @@ defineProps({
   description: String,
   introduction: String,
   link: String,
+  icon: Object,
 })
 </script>

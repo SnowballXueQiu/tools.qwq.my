@@ -4,8 +4,9 @@ import {
   NButton,
   NH1
 } from 'naive-ui'
+import { ClipboardBulletListLtr20Regular } from '@vicons/fluent'
 
-const tools = ['codeSniper']
+const tools = [{ name: 'codeSniper', icon: ClipboardBulletListLtr20Regular }]
 
 </script>
 
@@ -18,9 +19,10 @@ const tools = ['codeSniper']
   <Center>
     <ToolCard
       v-for="tool in tools"
-      :title='`module.${tool}.title`'
-      :description='`module.${tool}.description`'
-      :introduction='`module.${tool}.introduction`'
+      :title='`module.${tool.name}.title`'
+      :description='`module.${tool.name}.description`'
+      :introduction='`module.${tool.name}.introduction`'
+      :icon="tool.icon"
       link="/sniper" />
   </Center>
 </template>
