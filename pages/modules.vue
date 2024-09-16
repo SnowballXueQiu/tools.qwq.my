@@ -1,9 +1,6 @@
 <script lang="ts" setup>
 import Center from '~/components/Center.vue'
-import {
-  NButton,
-  NH1
-} from 'naive-ui'
+import { NH1 } from 'naive-ui'
 import { ClipboardBulletListLtr20Regular } from '@vicons/fluent'
 
 const tools = [{ name: 'codeSniper', icon: ClipboardBulletListLtr20Regular }]

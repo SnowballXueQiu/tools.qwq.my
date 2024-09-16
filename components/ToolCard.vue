@@ -23,8 +23,7 @@
 </style>
 
 <script setup lang="ts">
-import { NCard, NThing, NAvatar, NIcon, NButton } from 'naive-ui'
-import { CashOutline as CashIcon } from "@vicons/ionicons5";
+import { NCard, NThing, NAvatar, NIcon } from 'naive-ui'
 const router = useRouter();
 
 const locate = (link) => {
