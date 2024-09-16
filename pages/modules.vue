@@ -1,23 +1,20 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import Center from '~/components/Center.vue'
+import {
+  NButton,
+  NH1
+} from 'naive-ui'
 
-
-
-export default defineComponent({
-  name: 'modules',
-  components: { Center },
-  setup() {
-    const { locale, setLocale } = useI18n()
-  }
-})
 </script>
 
 <template>
   <Center>
-    <h1>
+    <NH1>
       {{ $t('modules.title') }}
-    </h1>
+    </NH1>
+  </Center>
+  <Center>
+    <ToolCard title="tools" description="This a tool" introduction="货币是为了提高交易效率而用于交换的中介商品。货币有多种形式" link="/" />
   </Center>
 </template>
 
