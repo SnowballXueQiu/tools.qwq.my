@@ -1,3 +1,6 @@
 {
-  "modules.title": "模块"
+  "modules.title": "模块",
+  "module.codeSniper.title": "代码剪贴板",
+  "module.codeSniper.description": "分类",
+  "module.codeSniper.introduction": "代码剪贴板是一个方便的工具，可以帮助你快速分享代码片段、log等"
 }

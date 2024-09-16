@@ -1,3 +1,6 @@
 {
-  "modules.title": "Modules"
+  "modules.title": "Modules",
+  "module.codeSniper.title": "Code Sniper",
+  "module.codeSniper.description": "Category",
+  "module.codeSniper.introduction": "Code Sniper is a convenient tool that helps you quickly share code snippets, logs, etc."
 }

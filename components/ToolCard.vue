@@ -8,9 +8,9 @@
           </NIcon>
         </NAvatar>
       </template>
-      <template #header> {{title}} </template>
-      <template #description> {{description}} </template>
-      {{introduction}}
+      <template #header> {{ $t(title) }} </template>
+      <template #description> {{ $t(description) }} </template>
+      {{ $t(introduction) }}
     </NThing>
   </NCard>
 </template>

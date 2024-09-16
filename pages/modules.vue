@@ -5,6 +5,8 @@ import {
   NH1
 } from 'naive-ui'
 
+const tools = ['codeSniper']
+
 </script>
 
 <template>
@@ -14,7 +16,12 @@ import {
     </NH1>
   </Center>
   <Center>
-    <ToolCard title="tools" description="This a tool" introduction="货币是为了提高交易效率而用于交换的中介商品。货币有多种形式" link="/" />
+    <ToolCard
+      v-for="tool in tools"
+      :title='`module.${tool}.title`'
+      :description='`module.${tool}.description`'
+      :introduction='`module.${tool}.introduction`'
+      link="/sniper" />
   </Center>
 </template>
 
